@@ -1,0 +1,61 @@
+<!-- 12_jQueryLibrary.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Site</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery Library -->
+    <style>
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="Style.css"> -->
+</head>
+<body>
+    <h1>
+        <a href="PracticeProjectindex.html">WEB</a>
+    </h1>
+    <input type="button" value="night" onclick=" 
+        if(this.value === 'night'){
+            $('body').css('background-color', 'black');
+            $('body').css('color', 'white');
+            // for(var i=0; i<target2.length; i++){
+            //     target2[i].style.color = 'red';
+            // }
+            $('a').css('color', 'red');
+            this.value = 'day';
+        } else{
+            $('body').css('background-color', 'white');
+            $('body').css('color', 'black');
+            // for(var i=0; i<target2.length; i++){
+            //     target2[i].style.color = 'blue';
+            // }
+            $('a').css('color', 'blue');
+            this.value = 'night';
+        }
+    ">
+    <div id="grid">
+        <ol>
+            <li><a href="PracticeProject1.html">HTML</a></li>
+            <li><a href="PracticeProject2.html">CSS</a></li>
+            <li><a href="PracticeProject3.html">JS</a></li>
+        </ol>
+        
+        <div>
+            <h2>WEB</h2>
+            <p>
+                The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other 
+                web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, 
+                and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. 
+                He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] 
+                The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 
+                and to the general public on the Internet in August 1991.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
